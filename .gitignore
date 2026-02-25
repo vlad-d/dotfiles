@@ -1,0 +1,5 @@
+.idea
+.DS_Store
+.zshrc.private
+.env
+*.local

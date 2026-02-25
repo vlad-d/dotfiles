@@ -1,0 +1,13 @@
+# nord-simple.zsh-theme
+
+
+# ── Git prompt integration ────────────────────────────────────────────────────
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[cyan]%} "
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%}x%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+
+# ── Build the left prompt (PROMPT) ────────────────────────────────────────────
+PROMPT='%{$fg[blue]%}%1~ %{$reset_color%}$(git_prompt_info) %{$fg_bold[white]%}❯ %{$reset_color%}'
+
+RPROMPT='%{$fg_bold[red]%}%(?..x)%{$reset_color%}'
